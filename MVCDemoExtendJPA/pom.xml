@@ -87,6 +87,20 @@
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.25</version>
     </dependency>
+
+    <!-- 配置html解析器FreeMarker-->
+    <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.23</version>
+    </dependency>
+    <!-- 使用FreeMarker需要引入此spring-context-support依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>4.3.8.RELEASE</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>MVCDemoExtendJPA</finalName>

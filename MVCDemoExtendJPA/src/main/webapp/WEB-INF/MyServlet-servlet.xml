@@ -54,4 +54,27 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
+
+    <!-- 定义一个视图解析器 -->
+    <!-- 此处定义的是一个根据前缀和后缀确定要使用的视图 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"></property>
+        <property name="suffix" value=".jsp"></property>
+        <property name="order" value="1"></property>
+    </bean>
+    <!--<bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="0"></property>
+        <property name="prefix" value="/WEB-INF/views/"></property>
+        <property name="contentType" value="text/html"></property>
+    </bean> 无法用JSP配置方式，去直接配置HTML解析器，配置失败-->
+    <!-- 配置多视图解析器时，使用order属性指定执行优先级，order越小，优先级越高 -->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/views/"></property>
+    </bean>
+    <bean id="htmlviewResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="suffix" value=".html" />
+        <property name="order" value="0"></property>
+        <property name="contentType" value="text/html;charset=UTF-8"></property>
+    </bean>
 </beans>

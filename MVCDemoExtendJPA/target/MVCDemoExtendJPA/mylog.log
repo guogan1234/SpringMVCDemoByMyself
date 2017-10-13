@@ -22,3 +22,252 @@
 2017/10/13 13:33:37 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 13:33:33 CST 2017]; root of context hierarchy
 2017/10/13 13:33:38 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization completed in 4680 ms
 2017/10/13 13:33:38 INFO  [com.test.guo.controller.HelloController] - File:hello sjf4j!!!
+2017/10/13 15:38:17 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Closing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 13:33:33 CST 2017]; root of context hierarchy
+2017/10/13 15:38:17 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:04:05 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization started
+2017/10/13 16:04:05 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:04:05 CST 2017]; root of context hierarchy
+2017/10/13 16:04:05 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/MyServlet-servlet.xml]
+2017/10/13 16:04:06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:04:07 INFO  [org.hibernate.Version] - HHH000412: Hibernate Core {4.3.11.Final}
+2017/10/13 16:04:07 INFO  [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2017/10/13 16:04:07 INFO  [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2017/10/13 16:04:07 INFO  [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017/10/13 16:04:08 INFO  [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017/10/13 16:04:08 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: test.tb_employee
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [firstname, id, salary, lastname]
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [primary]
+2017/10/13 16:04:09 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2017/10/13 16:04:09 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/hello],methods=[GET]}" onto private java.lang.String com.test.guo.controller.HelloController.hello()
+2017/10/13 16:04:09 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/helloJSP],methods=[GET]}" onto private java.lang.String com.test.guo.controller.HelloJSPController.helloJSP()
+2017/10/13 16:04:09 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/TestJpa],methods=[GET]}" onto private java.lang.String com.test.guo.controller.MysqlController.find()
+2017/10/13 16:04:10 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:04:05 CST 2017]; root of context hierarchy
+2017/10/13 16:04:10 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:04:05 CST 2017]; root of context hierarchy
+2017/10/13 16:04:11 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization completed in 5650 ms
+2017/10/13 16:04:11 INFO  [com.test.guo.controller.HelloJSPController] - helloJSP!!!
+2017/10/13 16:12:17 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Closing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:04:05 CST 2017]; root of context hierarchy
+2017/10/13 16:12:17 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:16:10 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization started
+2017/10/13 16:16:10 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:16:10 CST 2017]; root of context hierarchy
+2017/10/13 16:16:10 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/MyServlet-servlet.xml]
+2017/10/13 16:16:12 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:16:12 INFO  [org.hibernate.Version] - HHH000412: Hibernate Core {4.3.11.Final}
+2017/10/13 16:16:12 INFO  [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2017/10/13 16:16:12 INFO  [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2017/10/13 16:16:13 INFO  [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017/10/13 16:16:13 INFO  [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017/10/13 16:16:14 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: test.tb_employee
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [firstname, id, salary, lastname]
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [primary]
+2017/10/13 16:16:14 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2017/10/13 16:16:15 WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] for bean with name 'freemarkerConfig' defined in ServletContext resource [/WEB-INF/MyServlet-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] for bean with name 'freemarkerConfig' defined in ServletContext resource [/WEB-INF/MyServlet-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+2017/10/13 16:16:15 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:16:15 ERROR [org.springframework.web.servlet.DispatcherServlet] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] for bean with name 'freemarkerConfig' defined in ServletContext resource [/WEB-INF/MyServlet-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] for bean with name 'freemarkerConfig' defined in ServletContext resource [/WEB-INF/MyServlet-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:838)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:633)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:552)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:493)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1231)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1144)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:817)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2463)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2452)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] for bean with name 'freemarkerConfig' defined in ServletContext resource [/WEB-INF/MyServlet-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:445)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:409)
+	at org.springframework.context.support.AbstractApplicationContext.getBeanNamesForType(AbstractApplicationContext.java:1147)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:198)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:183)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:125)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 35 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2472)
+	at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:854)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1274)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1344)
+	... 47 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.ui.freemarker.FreeMarkerConfigurationFactory
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 58 more
+Related cause:
+org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] for bean with name 'freemarkerConfig' defined in ServletContext resource [/WEB-INF/MyServlet-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:445)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:530)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1167)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:310)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:272)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:247)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:120)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:76)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:74)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:119)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:838)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:633)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:552)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:493)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1231)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1144)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:817)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2463)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2452)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/ui/freemarker/FreeMarkerConfigurationFactory
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2472)
+	at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:854)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1274)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1344)
+	... 52 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.ui.freemarker.FreeMarkerConfigurationFactory
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 63 more
+2017/10/13 16:21:03 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization started
+2017/10/13 16:21:03 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:21:03 CST 2017]; root of context hierarchy
+2017/10/13 16:21:03 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/MyServlet-servlet.xml]
+2017/10/13 16:21:04 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:21:05 INFO  [org.hibernate.Version] - HHH000412: Hibernate Core {4.3.11.Final}
+2017/10/13 16:21:05 INFO  [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2017/10/13 16:21:05 INFO  [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2017/10/13 16:21:05 INFO  [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017/10/13 16:21:06 INFO  [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017/10/13 16:21:06 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: test.tb_employee
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [firstname, id, salary, lastname]
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [primary]
+2017/10/13 16:21:07 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2017/10/13 16:21:07 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/hello],methods=[GET]}" onto private java.lang.String com.test.guo.controller.HelloController.hello()
+2017/10/13 16:21:07 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/helloJSP],methods=[GET]}" onto private java.lang.String com.test.guo.controller.HelloJSPController.helloJSP()
+2017/10/13 16:21:07 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/TestJpa],methods=[GET]}" onto private java.lang.String com.test.guo.controller.MysqlController.find()
+2017/10/13 16:21:07 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:21:03 CST 2017]; root of context hierarchy
+2017/10/13 16:21:07 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:21:03 CST 2017]; root of context hierarchy
+2017/10/13 16:21:08 INFO  [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017/10/13 16:21:08 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization completed in 5464 ms
+2017/10/13 16:21:08 INFO  [com.test.guo.controller.HelloJSPController] - helloJSP!!!
+2017/10/13 16:23:38 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Closing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:21:03 CST 2017]; root of context hierarchy
+2017/10/13 16:23:38 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:25:11 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization started
+2017/10/13 16:25:11 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:25:11 CST 2017]; root of context hierarchy
+2017/10/13 16:25:11 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/MyServlet-servlet.xml]
+2017/10/13 16:25:13 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017/10/13 16:25:13 INFO  [org.hibernate.Version] - HHH000412: Hibernate Core {4.3.11.Final}
+2017/10/13 16:25:13 INFO  [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2017/10/13 16:25:13 INFO  [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2017/10/13 16:25:14 INFO  [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017/10/13 16:25:14 INFO  [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017/10/13 16:25:15 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2017/10/13 16:25:15 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2017/10/13 16:25:15 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2017/10/13 16:25:15 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2017/10/13 16:25:16 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: test.tb_employee
+2017/10/13 16:25:16 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [firstname, id, salary, lastname]
+2017/10/13 16:25:16 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2017/10/13 16:25:16 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [primary]
+2017/10/13 16:25:16 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2017/10/13 16:25:16 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/hello],methods=[GET]}" onto private java.lang.String com.test.guo.controller.HelloController.hello()
+2017/10/13 16:25:16 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/helloJSP],methods=[GET]}" onto private java.lang.String com.test.guo.controller.HelloJSPController.helloJSP()
+2017/10/13 16:25:16 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/TestJpa],methods=[GET]}" onto private java.lang.String com.test.guo.controller.MysqlController.find()
+2017/10/13 16:25:17 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:25:11 CST 2017]; root of context hierarchy
+2017/10/13 16:25:17 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:25:11 CST 2017]; root of context hierarchy
+2017/10/13 16:25:17 INFO  [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer] - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017/10/13 16:25:18 INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'MyServlet': initialization completed in 6349 ms
+2017/10/13 16:25:18 INFO  [com.test.guo.controller.HelloJSPController] - helloJSP!!!
+2017/10/13 16:25:25 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Closing WebApplicationContext for namespace 'MyServlet-servlet': startup date [Fri Oct 13 16:25:11 CST 2017]; root of context hierarchy
+2017/10/13 16:25:25 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
