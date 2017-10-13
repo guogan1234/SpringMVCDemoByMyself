@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <jpa:repositories base-package="com.test.guo"></jpa:repositories>
+    
+    <bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSourceRef"></property>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapterRef"></property>
+        <property name="packagesToScan" value="com.test.guo"></property>
+    </bean>
+
+    <!-- 配置JPA规范实现厂商-->
+    <bean id="jpaVendorAdapterRef" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="database" value="MYSQL"></property>
+        <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect"></property>
+        <property name="generateDdl" value="true"></property>
+        <property name="showSql" value="true"></property>
+    </bean>
+
+    <!-- 配置使用的数据库操作驱动方式(JNDI/DBCP连接池/JDBC驱动)-->
+    <!-- 使用JDBC驱动(未配置成功)-->
+    <!--
+    <bean id="dataSourceRef" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:8080/MySpringMVCDemoByIdea"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+    </bean> -->
+    <!-- 使用DBCP连接池-->
+    <bean id="dataSourceRef" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:8080/MySpringMVCDemoByIdea"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+    </bean>
+
+    <!--配置针对JPA的局部事务管理器-->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="emf"/>
+    </bean>
+    <!--根据事务注解来生成事务代理-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+</beans>

@@ -2,20 +2,29 @@
 <beans xmlns="http://www.springframework.org/schema/beans"  
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"  
     xmlns:context="http://www.springframework.org/schema/context"  
-    xmlns:mvc="http://www.springframework.org/schema/mvc"  
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
     xsi:schemaLocation="    
     http://www.springframework.org/schema/beans     
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd    
     http://www.springframework.org/schema/context    
     http://www.springframework.org/schema/context/spring-context-3.0.xsd    
     http://www.springframework.org/schema/mvc    
-    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+    http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     
     <!-- 处理对静态资源的请求 -->
     <!--
     <mvc:resources location="/resources/*" mapping="/resources/**"/>
     -->
-    
+
+    <!--使Aspect注解起作用,自动为匹配的类生成代理对象-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
     <!-- 添加注解驱动(相对于方法的注解参数的校验以及转换) -->
     <mvc:annotation-driven/>
     
@@ -45,4 +54,47 @@
         <property name="order" value="0"></property> 
         <property name="contentType" value="text/html;charset=UTF-8"></property>         
     </bean>
-    </beans> 
+
+    <jpa:repositories base-package="com.test.guo" entity-manager-factory-ref="entityManagerFactory"
+                      transaction-manager-ref="transactionManager"></jpa:repositories>
+
+    <!-- 配置Hibernate 的事物管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSourceRef"></property>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapterRef"></property>
+        <property name="packagesToScan" value="com.test.guo"></property>
+    </bean>
+
+    <!-- 配置JPA规范实现厂商-->
+    <bean id="jpaVendorAdapterRef" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="database" value="MYSQL"></property>
+        <property name="databasePlatform" value="org.hibernate.dialect.MySQL5InnoDBDialect"></property>
+        <property name="generateDdl" value="false"></property>
+        <property name="showSql" value="true"></property>
+    </bean>
+    <!-- 配置使用的数据库操作驱动方式(JNDI/DBCP连接池/JDBC驱动)-->
+    <!-- 使用JDBC驱动(未配置成功)-->
+    <!--
+    <bean id="dataSourceRef" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:8080/MySpringMVCDemoByIdea"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+    </bean> -->
+    <!-- 使用DBCP连接池-->
+    <bean id="dataSourceRef" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://127.0.0.1:8080/test"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+        <property name="validationQuery">
+            <value>select 1 from dual</value>
+        </property>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+</beans>
